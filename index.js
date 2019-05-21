@@ -17,12 +17,15 @@ var url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&
 function refresh() {
     fetch(url).then(function (rx) {
        rx.json().then(function (r) {
+           console.log(new Date())
            console.log(r)
+           console.log('--------')
            fs.writeFileSync('/tmp/'+appid, JSON.stringify(r));
        })
     })
 }
 refresh()
-var j = schedule.scheduleJob('1 1 * * *', function(){
+
+setInterval(function () {
     refresh()
-});
+},3600*1000)
