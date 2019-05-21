@@ -1,0 +1,25 @@
+{
+  "name": "shuatoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "shuatoken":"index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcstream/shuatoken.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xcstream/shuatoken/issues"
+  },
+  "homepage": "https://github.com/xcstream/shuatoken#readme",
+  "dependencies": {
+    "node-schedule": "^1.3.2"
+  }
+}
